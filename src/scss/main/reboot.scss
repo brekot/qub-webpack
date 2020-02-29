@@ -78,13 +78,14 @@ sup {
 }
 
 a {
-    color: var(--link);
-    text-decoration: underline;
+    color: var(--text);
+    text-decoration: none;
     background-color: transparent;
+    transition: all .3s linear;
 }
 
 a:hover {
-    color: var(--link);
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -145,6 +146,11 @@ button:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled) {
     cursor: pointer;
+}
+
+input {
+    -webkit-appearance: none;
+    outline: none;
 }
 
 input[type="radio"],

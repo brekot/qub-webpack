@@ -1,4 +1,5 @@
-@import "./variables";
-@import "./reboot";
-// @import "./jquery.formstyler";
-@import "./page";
+@import "./main/variables";
+@import "./main/reboot";
+@import "./lib/jquery.formstyler";
+@import "./main/template";
+@import "./page/project";
