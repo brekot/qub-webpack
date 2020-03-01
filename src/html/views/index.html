@@ -39,35 +39,47 @@
 
         <div class="project-info">
             <div class="project-info__item">
-                <img class="project-info__icon" src="/local/img/icon.project1.svg" alt="">
-                <div class="project-info__name">
-                    2 256 квартир
+                <div class="project-info__pict">
+                    <img class="project-info__icon" src="/local/img/icon.project1.svg" alt="">
                 </div>
-                <div class="project-info__tetx">
-                    Общей стоимостью<br>
-                    1 211 203 980 ₽
-                </div>
-            </div>
-            <div class="project-info__item">
-                <img class="project-info__icon" src="/local/img/icon.project2.svg" alt="">
-                <div class="project-info__name">
-                    122 парковочных<br>
-                    места
-                </div>
-                <div class="project-info__tetx">
-                    Общей стоимостью<br>
-                    343 203 980 ₽
+                <div class="project-info__block">
+                    <div class="project-info__name">
+                        2 256 квартир
+                    </div>
+                    <div class="project-info__tetx">
+                        Общей стоимостью<br>
+                        1 211 203 980 ₽
+                    </div>
                 </div>
             </div>
             <div class="project-info__item">
-                <img class="project-info__icon" src="/local/img/icon.project3.svg" alt="">
-                <div class="project-info__name">
-                    3 коммерческой<br>
-                    недвижимости
+                <div class="project-info__pict">
+                    <img class="project-info__icon" src="/local/img/icon.project2.svg" alt="">
                 </div>
-                <div class="project-info__tetx">
-                    Общей стоимостью<br>
-                    2 334 203 980 ₽
+                <div class="project-info__block">
+                    <div class="project-info__name">
+                        122 парковочных<br>
+                        места
+                    </div>
+                    <div class="project-info__tetx">
+                        Общей стоимостью<br>
+                        343 203 980 ₽
+                    </div>
+                </div>
+            </div>
+            <div class="project-info__item">
+                <div class="project-info__pict">
+                    <img class="project-info__icon" src="/local/img/icon.project3.svg" alt="">
+                </div>
+                <div class="project-info__block">
+                    <div class="project-info__name">
+                        3 коммерческой<br>
+                        недвижимости
+                    </div>
+                    <div class="project-info__tetx">
+                        Общей стоимостью<br>
+                        2 334 203 980 ₽
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,6 +117,15 @@
                         <a href="javascript:;" class="select-date__link">Год</a>
                     </div>
 
+                    <select class="select-inner date-time-line__desctop-hide">
+                        <option value="" selected>Сегодня</option>
+                        <option value="" >Вчера</option>
+                        <option value="" >Неделя</option>
+                        <option value="" >Месяц</option>
+                        <option value="" >Квартал</option>
+                        <option value="" >Год</option>
+                    </select>
+
                 </div>
                 <div>
 
@@ -120,23 +141,23 @@
 
             <div class="project-graph-legend">
                 <div class="project-graph-legend__item">
-                    Звонки
+                    <span class="project-graph-legend__name">Звонки</span>
                     <span class="project-graph-legend__count project-graph-legend__color1">856</span>
                 </div>
                 <div class="project-graph-legend__item">
-                    Посещения
+                    <span class="project-graph-legend__name">Посещения</span>
                     <span class="project-graph-legend__count project-graph-legend__color2">100</span>
                 </div>
                 <div class="project-graph-legend__item">
-                    Брони
+                    <span class="project-graph-legend__name">Брони</span>
                     <span class="project-graph-legend__count project-graph-legend__color3">35</span>
                 </div>
                 <div class="project-graph-legend__item">
-                    Платные брони
+                    <span class="project-graph-legend__name">Платные брони</span>
                     <span class="project-graph-legend__count project-graph-legend__color4">15</span>
                 </div>
                 <div class="project-graph-legend__item">
-                    Продано
+                    <span class="project-graph-legend__name">Продано</span>
                     <span class="project-graph-legend__count project-graph-legend__color5">5</span>
                 </div>
             </div>
@@ -153,64 +174,68 @@
     <div class="main-block__body main-block__body_open">
 
         <div class="project-table">
-            <table class="project-table__table">
-                <tr>
-                    <th class="project-table__th"></th>
-                    <th class="project-table__th project-table__th_black">Сегодня</th>
-                    <th class="project-table__th">Вчера</th>
-                    <th class="project-table__th">Неделя</th>
-                    <th class="project-table__th">Месяц</th>
-                    <th class="project-table__th">Квартал</th>
-                    <th class="project-table__th">Год</th>
-                </tr>
-                <tr>
-                    <td class="project-table__td project-table__td_icon project-table__td_icon1">Звонки</td>
-                    <td class="project-table__td project-table__td_down-more">100</td>
-                    <td class="project-table__td">120</td>
-                    <td class="project-table__td">520</td>
-                    <td class="project-table__td">1500</td>
-                    <td class="project-table__td">3200</td>
-                    <td class="project-table__td">6228</td>
-                </tr>
-                <tr>
-                    <td class="project-table__td project-table__td_icon project-table__td_icon2">Посещения</td>
-                    <td class="project-table__td project-table__td_down">45</td>
-                    <td class="project-table__td">50</td>
-                    <td class="project-table__td">100</td>
-                    <td class="project-table__td">200</td>
-                    <td class="project-table__td">500</td>
-                    <td class="project-table__td">2400</td>
-                </tr>
-                <tr>
-                    <td class="project-table__td project-table__td_icon project-table__td_icon3">Брони</td>
-                    <td class="project-table__td project-table__td_up-more">34</td>
-                    <td class="project-table__td">20</td>
-                    <td class="project-table__td">50</td>
-                    <td class="project-table__td">100</td>
-                    <td class="project-table__td">250</td>
-                    <td class="project-table__td">500</td>
-                </tr>
-                <tr>
-                    <td class="project-table__td project-table__td_icon project-table__td_icon4">Платные брони</td>
-                    <td class="project-table__td project-table__td_up">0</td>
-                    <td class="project-table__td">10</td>
-                    <td class="project-table__td">20</td>
-                    <td class="project-table__td">50</td>
-                    <td class="project-table__td">100</td>
-                    <td class="project-table__td">300</td>
-                </tr>
-                <tr>
-                    <td class="project-table__td project-table__td_icon project-table__td_icon5">Продано</td>
-                    <td class="project-table__td project-table__td_bold">5</td>
-                    <td class="project-table__td">2</td>
-                    <td class="project-table__td">8</td>
-                    <td class="project-table__td">20</td>
-                    <td class="project-table__td">60</td>
-                    <td class="project-table__td">2100</td>
-                </tr>
-            </table>
+            <div class="project-table__block">
+                <table class="project-table__table">
+                    <tr>
+                        <th class="project-table__th"></th>
+                        <th class="project-table__th project-table__th_black">Сегодня</th>
+                        <th class="project-table__th">Вчера</th>
+                        <th class="project-table__th">Неделя</th>
+                        <th class="project-table__th">Месяц</th>
+                        <th class="project-table__th">Квартал</th>
+                        <th class="project-table__th">Год</th>
+                    </tr>
+                    <tr>
+                        <td class="project-table__td project-table__td_icon project-table__td_icon1">Звонки</td>
+                        <td class="project-table__td project-table__td_down-more">100</td>
+                        <td class="project-table__td">120</td>
+                        <td class="project-table__td">520</td>
+                        <td class="project-table__td">1500</td>
+                        <td class="project-table__td">3200</td>
+                        <td class="project-table__td">6228</td>
+                    </tr>
+                    <tr>
+                        <td class="project-table__td project-table__td_icon project-table__td_icon2">Посещения</td>
+                        <td class="project-table__td project-table__td_down">45</td>
+                        <td class="project-table__td">50</td>
+                        <td class="project-table__td">100</td>
+                        <td class="project-table__td">200</td>
+                        <td class="project-table__td">500</td>
+                        <td class="project-table__td">2400</td>
+                    </tr>
+                    <tr>
+                        <td class="project-table__td project-table__td_icon project-table__td_icon3">Брони</td>
+                        <td class="project-table__td project-table__td_up-more">34</td>
+                        <td class="project-table__td">20</td>
+                        <td class="project-table__td">50</td>
+                        <td class="project-table__td">100</td>
+                        <td class="project-table__td">250</td>
+                        <td class="project-table__td">500</td>
+                    </tr>
+                    <tr>
+                        <td class="project-table__td project-table__td_icon project-table__td_icon4">Платные брони</td>
+                        <td class="project-table__td project-table__td_up">0</td>
+                        <td class="project-table__td">10</td>
+                        <td class="project-table__td">20</td>
+                        <td class="project-table__td">50</td>
+                        <td class="project-table__td">100</td>
+                        <td class="project-table__td">300</td>
+                    </tr>
+                    <tr>
+                        <td class="project-table__td project-table__td_icon project-table__td_icon5">Продано</td>
+                        <td class="project-table__td project-table__td_bold">5</td>
+                        <td class="project-table__td">2</td>
+                        <td class="project-table__td">8</td>
+                        <td class="project-table__td">20</td>
+                        <td class="project-table__td">60</td>
+                        <td class="project-table__td">2100</td>
+                    </tr>
+                </table>
+            </div>
             <div class="project-table__footer">
-                <div>Здесь предлагаю более гибкие настройки, но я их не придумал</div>
+                <div>
+                    <div class="project-table__comment">Здесь предлагаю более гибкие настройки, но я их не придумал</div>
+                </div>
                 <div>
 
                     <div class="select-time">

@@ -7,6 +7,24 @@ window.$ = $;*/
 
 $(function() {
 
+    $('.menu-btn').click(function(){
+
+        $('.left-block').addClass('left-block_active');
+        $('.menu-shadow').show();
+    });
+
+    $('.menu-close').click(function(){
+
+        $('.left-block').removeClass('left-block_active');
+        $('.menu-shadow').hide();
+    });
+
+    $('.menu-shadow').click(function(){
+
+        $('.left-block').removeClass('left-block_active');
+        $('.menu-shadow').hide();
+    });
+
     $('.main-block__head').click(function(){
 
         $(this).toggleClass('main-block__head_open');
@@ -18,4 +36,9 @@ $(function() {
     });
 
     $('select').styler();
+
+    if ($(document).width() < 500)
+    {
+        $('.form-search__input').attr('placeholder', 'Поиск');
+    }
 });

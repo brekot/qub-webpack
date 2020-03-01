@@ -9,10 +9,13 @@
     <title><%=title%></title>
 </head>
 <body>
+<div class="wrapper">
     <div class="left-block">
         <a href="javascript:;" class="main-logo">
-            <img src="/local/img/logo.svg" alt="">
+            <img class="main-logo__desktop" src="/local/img/logo.svg" alt="">
+            <img class="main-logo__mobile" src="/local/img/logo.mobile.svg" alt="">
         </a>
+        <a href="javascript:;" class="menu-close"></a>
         <nav class="main-menu">
             <a class="main-menu__link" href="javascript:;">
                 <img class="main-menu__icon" src="/local/img/icon.menu1.svg" alt="">
@@ -48,35 +51,47 @@
             </a>
         </nav>
     </div>
+    <div class="menu-shadow"></div>
     <header class="main-header">
         <div class="main-header__inner">
+
+            <a href="javascript:;" class="menu-btn">
+                <span class="menu-btn__icon"></span>
+            </a>
+
             <div class="main-header__left">
-                <select>
-                    <option value="" disabled selected>Все проекты</option>
-                    <option value="">Проект №1</option>
-                    <option value="">Проект №2</option>
-                    <option value="">Проект №3</option>
-                    <option value="">Проект №4</option>
-                    <option value="">Проект №5</option>
-                </select>
-                <div class="form-search">
-                    <form>
-                        <input class="form-search__input" type="text" placeholder="Поиск по системе" value="">
-                        <button class="form-search__button" type="submit"></button>
-                    </form>
+                <div class="main-header__left-part">
+                    <select>
+                        <option value="" disabled selected>Все проекты</option>
+                        <option value="">Проект №1</option>
+                        <option value="">Проект с очень длинным названием</option>
+                        <option value="">Проект №3</option>
+                        <option value="">Проект №4</option>
+                        <option value="">Проект №5</option>
+                    </select>
+                </div>
+                <div class="main-header__left-part">
+                    <div class="form-search">
+                        <form>
+                            <input class="form-search__input" type="text" placeholder="Поиск по системе" value="">
+                            <button class="form-search__button" type="submit"></button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="main-header__right">
-                <div class="main-header__icons">
-                    <a href="javascript:;" class="main-header__icon main-header__icon1"></a>
-                    <a href="javascript:;" class="main-header__icon main-header__icon2"></a>
-                    <a href="javascript:;" class="main-header__icon main-header__icon3">
-                        <span class="main-header__icon-count">2</span>
-                    </a>
-                </div>
-                <div class="main-header__user">
-                    <img class="main-header__user-pict" src="/local/img/icon.user.svg" alt="">
-                    <div class="main-header__user-name">Владимир</div>
+                <div class="main-header__right-inner">
+                    <div class="main-header__icons">
+                        <a href="javascript:;" class="main-header__icon main-header__icon1"></a>
+                        <a href="javascript:;" class="main-header__icon main-header__icon2"></a>
+                        <a href="javascript:;" class="main-header__icon main-header__icon3">
+                            <span class="main-header__icon-count">2</span>
+                        </a>
+                    </div>
+                    <div class="main-header__user">
+                        <img class="main-header__user-pict" src="/local/img/icon.user.svg" alt="">
+                        <div class="main-header__user-name">Владимир</div>
+                    </div>
                 </div>
             </div>
         </div>
