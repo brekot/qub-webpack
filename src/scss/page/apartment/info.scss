@@ -1,12 +1,21 @@
 .apartment-info {
     padding: 5px 15px 15px 30px;
+    display: flex;
 
-    &__left {}
+    &__left {
+        width: calc(100% - 345px);
+    }
     &__name {
         font-weight: bold;
         font-size: 34px;
         line-height: 40px;
         margin: 0 0 20px;
+    }
+    &__inner {
+        display: flex;
+    }
+    &__second {
+        margin: 0 auto;
     }
     &__head {
         font-weight: bold;
@@ -24,5 +33,32 @@
         font-weight: bold;
         padding: 0;
     }
-    &__right {}
+    &__right {
+        width: 345px;
+        position: relative;
+    }
+    &__links {
+        position: absolute;
+        bottom: 25px;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+    }
+    &__link {
+        height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 15px;
+    }
+    &__download {
+        background-image: url(img/icon.download.svg);
+    }
+    &__print {
+        background-image: url(img/icon.print.svg);
+    }
+    &__share {
+        background-image: url(img/icon.share.svg);
+    }
 }

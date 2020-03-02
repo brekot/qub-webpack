@@ -4,262 +4,211 @@
 
 <%= _.template(require('./../includes/header.html'))(data) %>
 
-<!-- Шапка объекта -->
-<div class="project-head">
-    <div class="project-head__main">
-        <img class="project-head__logo" src="/local/img/logo.project.svg" alt="">
-        <div class="project-head__name">Каннские львы</div>
+<div class="breadcrumb">
+    <a href="javascript:;" class="breadcrumb__link">Все проекты</a>
+    <a href="javascript:;" class="breadcrumb__link">Все клиенты</a>
+    <span class="breadcrumb__current">Валентина Иванова</span>
+</div>
+
+<div class="client-header">
+    <div class="client-header__first">
+        <div class="client-header__fio">Валентина Иванова</div>
+        <div class="client-header__fou">Физическое лицо</div>
     </div>
-    <div class="project-head__info">
-        <div class="project-head__info-line">
-            <div class="project-head__info-label">Количество домов</div>
-            <div class="project-head__info-count">9</div>
-        </div>
-        <div class="project-head__info-line">
-            <div class="project-head__info-label">Объектов в продаже</div>
-            <div class="project-head__info-count">286</div>
-        </div>
-        <div class="project-head__info-line">
-            <div class="project-head__info-label">Объектов продано </div>
-            <div class="project-head__info-count">345</div>
-        </div>
-    </div>
-    <div class="project-head__addr">
-        г. Махачкала, ул. Лаптиева, 37<br>
-        т.: <a class="project-head__addr-link" href="tel:+78005551406">8 800 555-14-06</a><br>
-        <a class="project-head__addr-link" href="//каннские-львы.рф" target="_blank">каннские-львы.рф</a>
+    <div class="client-header__second">
+        <span class="client-header__status">Продано</span>
+        <a href="javascript:;" class="client-header__addr">Жюль Верн - ул. Июльских дней, 1, кор.3 (1Б3, 3 этаж) №125</a>
     </div>
 </div>
 
-<!-- Информация об объекте -->
-<div class="main-block">
-    <a href="javascript:;" class="main-block__head main-block__head_open">
-        ВСЕГО ОБЪЕКТОВ
-        <span class="main-block__head-count">2 458</span>
-    </a>
-    <div class="main-block__body main-block__body_open">
-
-        <div class="project-info">
-            <a href="javascript:;" class="project-info__item">
-                <div class="project-info__pict">
-                    <img class="project-info__icon" src="/local/img/icon.project1.svg" alt="">
-                </div>
-                <div class="project-info__block">
-                    <div class="project-info__name">
-                        2 256 квартир
-                    </div>
-                    <div class="project-info__tetx">
-                        Общей стоимостью<br>
-                        1 211 203 980 ₽
-                    </div>
-                </div>
-            </a>
-            <a href="javascript:;" class="project-info__item">
-                <div class="project-info__pict">
-                    <img class="project-info__icon" src="/local/img/icon.project2.svg" alt="">
-                </div>
-                <div class="project-info__block">
-                    <div class="project-info__name">
-                        122 парковочных<br>
-                        места
-                    </div>
-                    <div class="project-info__tetx">
-                        Общей стоимостью<br>
-                        343 203 980 ₽
-                    </div>
-                </div>
-            </a>
-            <a href="javascript:;"  class="project-info__item">
-                <div class="project-info__pict">
-                    <img class="project-info__icon" src="/local/img/icon.project3.svg" alt="">
-                </div>
-                <div class="project-info__block">
-                    <div class="project-info__name">
-                        3 коммерческой<br>
-                        недвижимости
-                    </div>
-                    <div class="project-info__tetx">
-                        Общей стоимостью<br>
-                        2 334 203 980 ₽
-                    </div>
-                </div>
-            </a>
-        </div>
-
-    </div>
-</div>
-
-<!-- Квартиры в продаже -->
-<div class="main-block">
-    <a href="javascript:;" class="main-block__head">
-        КВАРТИР В ПРОДАЖЕ
-        <span class="main-block__head-count">286</span>
-    </a>
-    <div class="main-block__body">
-        <br><br><br><br><br><br><br>
-    </div>
-</div>
-
-<!-- График -->
-<div class="main-block">
-    <a href="javascript:;" class="main-block__head main-block__head_open">
-        ПОКАЗАТЕЛИ
-    </a>
-    <div class="main-block__body main-block__body_open">
-
-        <div class="project-graph">
-
-            <div class="date-time-line">
-                <div class="date-time-line__part">
-
-                    <div class="select-date">
-                        <a href="javascript:;" class="select-date__link select-date__link_active">Сегодня</a>
-                        <a href="javascript:;" class="select-date__link">Вчера</a>
-                        <a href="javascript:;" class="select-date__link">Неделя</a>
-                        <a href="javascript:;" class="select-date__link">Месяц</a>
-                        <a href="javascript:;" class="select-date__link">Квартал</a>
-                        <a href="javascript:;" class="select-date__link">Год</a>
-                    </div>
-
-                    <select class="select-inner date-time-line__desctop-hide">
-                        <option value="" selected>Сегодня</option>
-                        <option value="" >Вчера</option>
-                        <option value="" >Неделя</option>
-                        <option value="" >Месяц</option>
-                        <option value="" >Квартал</option>
-                        <option value="" >Год</option>
-                    </select>
-
-                </div>
-                <div class="date-time-line__part">
-
-                    <div class="select-time">
-                        <div class="select-time__name">Период:</div>
-                        <input class="select-time__input" type="text" value="22.12.19">
-                        <div class="select-time__sep">-</div>
-                        <input class="select-time__input" type="text" value="23.12.19">
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="project-graph-legend">
-                <div class="project-graph-legend__item">
-                    <span class="project-graph-legend__name">Звонки</span>
-                    <span class="project-graph-legend__count project-graph-legend__color1">856</span>
-                </div>
-                <div class="project-graph-legend__item">
-                    <span class="project-graph-legend__name">Посещения</span>
-                    <span class="project-graph-legend__count project-graph-legend__color2">100</span>
-                </div>
-                <div class="project-graph-legend__item">
-                    <span class="project-graph-legend__name">Брони</span>
-                    <span class="project-graph-legend__count project-graph-legend__color3">35</span>
-                </div>
-                <div class="project-graph-legend__item">
-                    <span class="project-graph-legend__name">Платные брони</span>
-                    <span class="project-graph-legend__count project-graph-legend__color4">15</span>
-                </div>
-                <div class="project-graph-legend__item">
-                    <span class="project-graph-legend__name">Продано</span>
-                    <span class="project-graph-legend__count project-graph-legend__color5">5</span>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-<!-- Статистика -->
-<div class="main-block">
-    <a href="javascript:;" class="main-block__head main-block__head_open">
-        СВОДНАЯ ТАБЛИЦА
-    </a>
-    <div class="main-block__body main-block__body_open">
-
-        <div class="project-table">
-            <div class="project-table__block">
-                <table class="project-table__table">
-                    <tr>
-                        <th class="project-table__th"></th>
-                        <th class="project-table__th project-table__th_black">Сегодня</th>
-                        <th class="project-table__th">Вчера</th>
-                        <th class="project-table__th">Неделя</th>
-                        <th class="project-table__th">Месяц</th>
-                        <th class="project-table__th">Квартал</th>
-                        <th class="project-table__th">Год</th>
-                    </tr>
-                    <tr>
-                        <td class="project-table__td project-table__td_icon project-table__td_icon1">Звонки</td>
-                        <td class="project-table__td project-table__td_down-more">100</td>
-                        <td class="project-table__td">120</td>
-                        <td class="project-table__td">520</td>
-                        <td class="project-table__td">1500</td>
-                        <td class="project-table__td">3200</td>
-                        <td class="project-table__td">6228</td>
-                    </tr>
-                    <tr>
-                        <td class="project-table__td project-table__td_icon project-table__td_icon2">Посещения</td>
-                        <td class="project-table__td project-table__td_down">45</td>
-                        <td class="project-table__td">50</td>
-                        <td class="project-table__td">100</td>
-                        <td class="project-table__td">200</td>
-                        <td class="project-table__td">500</td>
-                        <td class="project-table__td">2400</td>
-                    </tr>
-                    <tr>
-                        <td class="project-table__td project-table__td_icon project-table__td_icon3">Брони</td>
-                        <td class="project-table__td project-table__td_up-more">34</td>
-                        <td class="project-table__td">20</td>
-                        <td class="project-table__td">50</td>
-                        <td class="project-table__td">100</td>
-                        <td class="project-table__td">250</td>
-                        <td class="project-table__td">500</td>
-                    </tr>
-                    <tr>
-                        <td class="project-table__td project-table__td_icon project-table__td_icon4">Платные брони</td>
-                        <td class="project-table__td project-table__td_up">0</td>
-                        <td class="project-table__td">10</td>
-                        <td class="project-table__td">20</td>
-                        <td class="project-table__td">50</td>
-                        <td class="project-table__td">100</td>
-                        <td class="project-table__td">300</td>
-                    </tr>
-                    <tr>
-                        <td class="project-table__td project-table__td_icon project-table__td_icon5">Продано</td>
-                        <td class="project-table__td project-table__td_bold">5</td>
-                        <td class="project-table__td">2</td>
-                        <td class="project-table__td">8</td>
-                        <td class="project-table__td">20</td>
-                        <td class="project-table__td">60</td>
-                        <td class="project-table__td">2100</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="project-table__footer">
-                <div>
-                    <div class="project-table__comment">Здесь предлагаю более гибкие настройки, но я их не придумал</div>
-                </div>
-                <div>
-
-                    <div class="select-time">
-                        <div class="select-time__name">Период:</div>
-                        <input class="select-time__input" type="text" value="22.12.19">
-                        <div class="select-time__sep">-</div>
-                        <input class="select-time__input" type="text" value="23.12.19">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- Блок без шапки для примера -->
 <div class="main-block main-block_no-head">
-    <br><br><br><br><br><br><br>
+    <table class="table-one">
+        <tr>
+            <td class="table-one__first">
+                Учавствует в сделках
+            </td>
+            <td class="table-one__second">
+                2
+            </td>
+        </tr>
+        <tr>
+            <td class="table-one__first">
+                Квартиры
+            </td>
+            <td class="table-one__second">
+                Жюль Верн - ул. Июльских дней, 1, кор.2 (1Б2, 6 этаж) №364<br>
+                Жюль Верн - ул. Июльских дней, 1, кор.3 (1Б3, 3 этаж) №125
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="main-block">
+    <a href="javascript:;" class="main-block__head main-block__head_open">
+       КОНТАКТНЫЕ ДАННЫЕ
+    </a>
+    <div class="main-block__body main-block__body_open">
+
+        <div class="client-contact">
+            <div class="client-contact__first">
+                <a class="client-contact__phone" href="tel:+79166525656">8 (916) 652-56-56</a>
+                <a class="client-contact__email" href="mailto:valyivan@gmail.com">valyivan@gmail.com</a>
+                <div class="client-contact__btn">
+                    <a class="btn-first" href="javascript:;">Изменить</a>
+                </div>
+            </div>
+            <div class="client-contact__second">
+                <a class="client-contact__add" href="javascript:;">Добавить номер</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="main-block">
+    <a href="javascript:;" class="main-block__head main-block__head_open">
+       ПАСПОРТНЫЕ ДАННЫЕ
+    </a>
+    <div class="main-block__body main-block__body_open">
+        <table class="table-one">
+            <tr>
+                <td class="table-one__first">
+                    Серия
+                </td>
+                <td class="table-one__second">
+                    9256
+                </td>
+            </tr>
+            <tr>
+                <td class="table-one__first">
+                    Номер
+                </td>
+                <td class="table-one__second">
+                    456123
+                </td>
+            </tr>
+            <tr>
+                <td class="table-one__first">
+                    Кем выдан
+                </td>
+                <td class="table-one__second">
+                    Территориальным УФМС гор. Набережные челны Тукаевского района Республики Татарстан
+                </td>
+            </tr>
+            <tr>
+                <td class="table-one__first">
+                    Дата выдачи
+                </td>
+                <td class="table-one__second">
+                    16.02.1990
+                </td>
+            </tr>
+            <tr>
+                <td class="table-one__first">
+                    Код подразделения
+                </td>
+                <td class="table-one__second">
+                    160-952
+                </td>
+            </tr>
+            <tr>
+                <td class="table-one__first">
+                    Год рождения
+                </td>
+                <td class="table-one__second">
+                    1976
+                </td>
+            </tr>
+            <tr>
+                <td class="table-one__first">
+                    Адрес по прописек
+                </td>
+                <td class="table-one__second">
+                    Москва, ул. Интернациональная, 6а, кв.56
+                </td>
+            </tr>
+            <tr>
+                <td class="table-one__first">
+                    Почтовый индекс
+                </td>
+                <td class="table-one__second">
+                    520236
+                </td>
+            </tr>
+            <tr>
+                <td class="table-one__first">
+                    ИНН
+                </td>
+                <td class="table-one__second">
+                    2563025698754
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="main-block">
+    <a href="javascript:;" class="main-block__head main-block__head_open">
+       История клиента
+    </a>
+    <div class="main-block__body main-block__body_open">
+
+        <div class="client-history">
+            <div class="client-history__left">
+
+                <div class="client-line">
+                    <div class="client-line__point">
+                        <div class="client-line__name">12.09.2019</div>
+                        <div class="client-line__text">Продажа</div>
+                    </div>
+                    <div class="client-line__point">
+                        <div class="client-line__name">13.07.2019</div>
+                        <div class="client-line__text">не совсем поняла как появляется история клиента,
+                        оно получается автоматически или надо добавить комментарий?</div>
+                    </div>
+                    <div class="client-line__point">
+                        <div class="client-line__name">23.04.2019</div>
+                        <div class="client-line__text">если получается с помощью комментарий, то я добавляю
+                        соответствующее поле внизу</div>
+                    </div>
+                </div>
+
+                <div class="comment-block">
+                    <div class="h2">КОММЕНТАРИИ</div>
+                    <form>
+                        <textarea class="comment-block__textarea"></textarea>
+                        <div class="comment-block__btn">
+                            <button type="submit" class="btn-first" href="javascript:;">Изменить</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="client-history__right">
+
+                <div class="history-call">
+                    <div class="h2">ИСТОРИЯ ЗВОНКОВ</div>
+                    <div class="history-call__items">
+                        <div class="history-call__name">12.09.2019</div>
+                        <div class="history-call__text">Продажа</div>
+                        <div class="history-call__name">13.07.2019</div>
+                        <div class="history-call__text">Договор о встрече</div>
+                        <div class="history-call__name">23.04.2019</div>
+                        <div class="history-call__text">Первый звонок</div>
+                    </div>
+                    <div class="history-call__btn">
+                        <a class="btn-first" href="javascript:;">Показать ещё</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="out-main-block">
+    <a class="btn-second" href="javascript:;">Удалить клиента</a>
 </div>
 
 <%= _.template(require('./../includes/footer.html'))(data) %>
