@@ -1,0 +1,28 @@
+.apartment-info {
+    padding: 5px 15px 15px 30px;
+
+    &__left {}
+    &__name {
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 40px;
+        margin: 0 0 20px;
+    }
+    &__head {
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 22px;
+        margin: 0 0 10px;
+    }
+    &__table {
+        line-height: 28px;
+    }
+    &__td-first {
+        padding: 0 20px 0 0;
+    }
+    &__td-last {
+        font-weight: bold;
+        padding: 0;
+    }
+    &__right {}
+}
