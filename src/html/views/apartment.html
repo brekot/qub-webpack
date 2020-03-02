@@ -1,0 +1,18 @@
+<% var data = {
+    title: "Quartier - Project"
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="breadcrumb">
+    <a href="javascript:;" class="breadcrumb__link">Все проекты</a>
+    <a href="javascript:;" class="breadcrumb__link">Каннские львы</a>
+    <a href="javascript:;" class="breadcrumb__link">Лаптиева, 31</a>
+    <span class="breadcrumb__current">6 этаж</span>
+</div>
+
+<div class="main-block main-block_no-head">
+    Квартира 6Г №2
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

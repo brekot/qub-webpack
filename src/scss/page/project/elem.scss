@@ -15,8 +15,12 @@
 @media (max-width: 929px)
 {
     .date-time-line {
-        margin: 0 0 30px;
+        margin: 0 -5px 20px;
         flex-wrap: wrap;
+
+        &__part {
+            margin: 0 5px 10px;
+        }
     }
 }
 

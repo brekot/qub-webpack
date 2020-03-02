@@ -11,6 +11,10 @@
         text-decoration: underline;
         margin: 5px 0 10px;
         min-height: 50px;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 

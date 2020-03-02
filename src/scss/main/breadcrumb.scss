@@ -1,0 +1,25 @@
+.breadcrumb {
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 20px;
+
+    &__link {
+        padding: 0 15px 0 0;
+        position: relative;
+
+        &:hover {
+            text-decoration: underline;
+        }
+        &:after {
+            content: ">";
+            color: #9aacb9;
+            position: absolute;
+            right: 5px;
+        }
+    }
+    &__current {
+        
+    }
+}
