@@ -1,0 +1,176 @@
+// Левый блок с логотипом и меню
+.left-block {
+    position: fixed;
+    left: 0;
+    width: 150px;
+    z-index: 500;
+    top: 0;
+    bottom: 0;
+    box-shadow: 10px 0 22px rgba(167,184,211,.5);
+    background-color: var(--bg);
+}
+
+@media (max-width: 929px)
+{
+    .left-block {
+        width: 280px;
+        left: -350px;
+        transition: all .3s linear;
+
+        &_active {
+            left: 0;
+        }
+    }
+}
+
+// Логотип
+.main-logo {
+    display: block;
+    text-align: center;
+    padding: 20px 0 25px;
+}
+
+@media (min-width: 930px)
+{
+    .main-logo__mobile {
+        display: none;
+    }
+}
+@media (max-width: 929px)
+{
+    .main-logo {
+        text-align: left;
+        padding: 20px 40px;
+
+        &__desktop {
+            display: none;
+        }
+    }
+}
+
+// Главное меню
+.main-menu {
+
+    &__link {
+        display: flex;
+        text-align: center;
+        height: 70px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &_active,
+        &:hover {
+            background-color: #e5e7e9;
+            box-shadow: inset 0 4px 4px #D3D8DE;
+        }
+    }
+    &__name {
+        width: 100%;
+        margin: 5px 0 0;
+
+        &_bold {
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 929px)
+{
+    .main-menu {
+
+        &__link {
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 0 0 0 40px;
+            height: 55px;
+            margin: 0 0 5px;
+        }
+        &__name {
+            width: auto;
+            margin: 0 0 0 15px;
+        }
+    }
+}
+
+// Кнопка закрытия меню на мобиле
+@media (max-width: 929px)
+{
+    .menu-close {
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        height: 23px;
+        width: 23px;
+
+        &:before,
+        &:after {
+            background-color: #c4c4c4;
+            height: 2px;
+            width: 23px;
+            content: '';
+            position: absolute;
+            top: 10px;
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+// Тень меню на мобиле
+@media (max-width: 929px)
+{
+    .menu-shadow {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(83, 93, 108, 0.31);
+        z-index: 499;
+    }
+}
+
+// Кннопка открытия меню на мобиле
+@media (min-width: 930px)
+{
+    .menu-btn {
+        display: none;
+    }
+}
+@media (max-width: 929px)
+{
+    .menu-btn {
+        display: flex;
+        height: 30px;
+        align-items: center;
+
+        &__icon {
+            background-color: #C4C4C4;
+            height: 2px;
+            width: 30px;
+            position: relative;
+            display: block;
+
+            &:after,
+            &:before {
+                background-color:  #c4c4c4;
+                height: 2px;
+                width: 30px;
+                position: absolute;
+                content: "";
+            }
+            &:after {
+                bottom: 7px;
+            }
+            &:before {
+                top: 7px;
+            }
+        }
+    }
+}

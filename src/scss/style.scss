@@ -1,5 +1,13 @@
 @import "./main/variables";
 @import "./main/reboot";
 @import "./lib/jquery.formstyler";
+@import "./main/menu"; // Меню и всё что с ним связано
+@import "./main/header"; // Шапка и всё что с ней связано
 @import "./main/template";
-@import "./page/project";
+
+// Страница проекта
+@import "./page/project/head";
+@import "./page/project/info";
+@import "./page/project/table";
+@import "./page/project/graph";
+@import "./page/project/elem";

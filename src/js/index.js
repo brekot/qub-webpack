@@ -7,6 +7,7 @@ window.$ = $;*/
 
 $(function() {
 
+    // Меню свернуть / развернуть
     $('.menu-btn').click(function(){
 
         $('.left-block').addClass('left-block_active');
@@ -25,6 +26,7 @@ $(function() {
         $('.menu-shadow').hide();
     });
 
+    // Скрытие / раскрытие блоков
     $('.main-block__head').click(function(){
 
         $(this).toggleClass('main-block__head_open');
@@ -35,8 +37,10 @@ $(function() {
         });
     });
 
+    // Стилизация элементов
     $('select').styler();
 
+    // Замена placeholder в строке поиска
     if ($(document).width() < 500)
     {
         $('.form-search__input').attr('placeholder', 'Поиск');
