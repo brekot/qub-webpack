@@ -1,0 +1,57 @@
+.apartment-gallery {
+    display: flex;
+    margin: 0 0 30px;
+
+    &__left {
+        width: 750px;
+        padding: 0 60px;
+    }
+    &__count {
+        font-weight: bold;
+        text-align: center;
+        margin: 0 0 15px;
+    }
+    &__block {
+        position: relative;
+    }
+    &__item {
+        font-size: 0;
+    }
+    &__prev,
+    &__next {
+        position: absolute;
+        width: 21px;
+        height: 33px;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+    &__prev {
+        background-image: url(img/str.prev.svg);
+        left: -41px;
+    }
+    &__next {
+        background-image: url(img/str.next.svg);
+        right: -41px;
+    }
+    &__right {
+        width: calc(100% - 750px);
+        padding: 33px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__file {
+        background: url(img/icon.add.big.svg) no-repeat center;
+        width: 78px;
+        height: 78px;
+        cursor: pointer;
+
+        & > div {
+            display: none;
+        }
+    }
+}

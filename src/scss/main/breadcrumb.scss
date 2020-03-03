@@ -14,7 +14,7 @@
         }
         &:after {
             content: ">";
-            color: #9aacb9;
+            color: var(--text-light);
             position: absolute;
             right: 5px;
         }

@@ -1,0 +1,16 @@
+.history-action {
+    background-color: var(--bg);
+    height: 100%;
+    padding: 25px;
+
+    &__items {
+        margin: 0 0 35px;
+    }
+    &__text {
+        font-weight: bold;
+        margin: 0 0 20px;
+    }
+    &__btn {
+        text-align: center;
+    }
+}

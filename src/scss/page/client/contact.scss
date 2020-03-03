@@ -1,0 +1,46 @@
+.client-contact {
+    margin: 10px 0;
+
+    &__first {
+        margin: 0 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    &__email,
+    &__phone {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 25px;
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding: 0 0 0 30px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__phone {
+        background-image: url(img/icon.phone.svg);
+        margin: 0 75px 0 0;
+    }
+    &__email {
+        background-image: url(img/icon.email.svg);
+    }
+    &__btn {
+        margin: 0 0 0 auto;
+    }
+    &__add {
+        background: url(img/icon.add.small.svg) no-repeat left center;
+        font-size: 14px;
+        line-height: 18px;
+        color: #cdd7e3;
+        padding: 0 0 0 30px;
+        margin: 0 0 0 30px;
+        display: inline-block;
+
+        &:hover {
+            color: #cdd7e3;
+            text-decoration: underline;
+        }
+    }
+}

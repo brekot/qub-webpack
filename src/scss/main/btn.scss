@@ -1,0 +1,22 @@
+.btn-first,
+.btn-second {
+    height: 30px;
+    display: inline-block;
+    line-height: 28px;
+    border-radius: 5px;
+
+    &:hover {
+        color: var(--text);
+        border-color: var(--text);
+    }
+}
+.btn-first {
+    border: 1px solid var(--brown);
+    color: var(--brown);
+    padding: 0 30px;
+}
+.btn-second {
+    border: 1px solid #A7B8D3;
+    color: #A7B8D3;
+    padding: 0 15px;
+}

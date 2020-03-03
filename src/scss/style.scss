@@ -1,20 +1,31 @@
-@import "./main/variables";
-@import "./main/reboot";
-@import "./lib/jquery.formstyler";
+@import "./main/variables"; // Основые цвета
+@import "./main/reboot"; // Сброс стилей
+@import "./lib/jquery.formstyler"; // Стилизация элементов
+@import "~swiper/src/swiper"; // Общие стили слайдера
 @import "./main/menu"; // Меню и всё что с ним связано
 @import "./main/header"; // Шапка и всё что с ней связано
-@import "./main/template";
-@import "./main/breadcrumb";
+@import "./main/template"; // Рабочая область и основные блоки
+@import "./main/btn"; // Кнопки
+@import "./main/table"; // Простая таблица
+@import "./main/comment"; // Блок Комментарий
+@import "./main/breadcrumb"; // Хлебные крошки
+@import "./main/history.action"; // История действий
+@import "./main/select"; // Варианты селектов
 
 // Страница проекта
-@import "./page/project/head";
-@import "./page/project/info";
-@import "./page/project/table";
-@import "./page/project/graph";
-@import "./page/project/elem";
+@import "./page/project/head"; // Шапка объекта
+@import "./page/project/info"; // Информация об объекте
+@import "./page/project/table"; // Статистика
+@import "./page/project/graph"; // График
+@import "./page/project/elem"; // Отдельные элементы
 
 // Страница квартиры
-@import "./page/apartment/info";
+@import "./page/apartment/info"; // Информация о квартире
+@import "./page/apartment/home"; // Информация о доме
+@import "./page/apartment/data"; // Данные о квартиреgallery
+@import "./page/apartment/gallery"; // Галерея
 
 // Страница клиента
-@import "./page/client/elem";
+@import "./page/client/header"; // Шапка клиента
+@import "./page/client/contact"; // Контактные данные
+@import "./page/client/history"; // История клиента

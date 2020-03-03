@@ -8,7 +8,7 @@
     }
     &__th {
         padding: 13px 7px;
-        color: #9AACB9;
+        color: var(--text-light);
         text-transform: uppercase;
         font-weight: bold;
         line-height: 25px;
@@ -93,7 +93,7 @@
     &__footer {
         font-size: 12px;
         line-height: 14px;
-        color: #9AACB9;
+        color: var(--text-light);
         display: flex;
         justify-content: space-between;
         align-items: center;

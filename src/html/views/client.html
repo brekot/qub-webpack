@@ -4,12 +4,14 @@
 
 <%= _.template(require('./../includes/header.html'))(data) %>
 
+<!-- Хлебные крошки -->
 <div class="breadcrumb">
     <a href="javascript:;" class="breadcrumb__link">Все проекты</a>
     <a href="javascript:;" class="breadcrumb__link">Все клиенты</a>
     <span class="breadcrumb__current">Валентина Иванова</span>
 </div>
 
+<!-- Шапка клиента -->
 <div class="client-header">
     <div class="client-header__first">
         <div class="client-header__fio">Валентина Иванова</div>
@@ -21,6 +23,7 @@
     </div>
 </div>
 
+<!-- Учавстие в сделках -->
 <div class="main-block main-block_no-head">
     <table class="table-one">
         <tr>
@@ -43,6 +46,7 @@
     </table>
 </div>
 
+<!-- Контактные данные -->
 <div class="main-block">
     <a href="javascript:;" class="main-block__head main-block__head_open">
        КОНТАКТНЫЕ ДАННЫЕ
@@ -65,6 +69,7 @@
     </div>
 </div>
 
+<!-- Паспортные данные -->
 <div class="main-block">
     <a href="javascript:;" class="main-block__head main-block__head_open">
        ПАСПОРТНЫЕ ДАННЫЕ
@@ -147,6 +152,7 @@
     </div>
 </div>
 
+<!-- История клиента -->
 <div class="main-block">
     <a href="javascript:;" class="main-block__head main-block__head_open">
        История клиента
@@ -156,6 +162,7 @@
         <div class="client-history">
             <div class="client-history__left">
 
+                <!-- Линия действий -->
                 <div class="client-line">
                     <div class="client-line__point">
                         <div class="client-line__name">12.09.2019</div>
@@ -173,33 +180,21 @@
                     </div>
                 </div>
 
-                <div class="comment-block">
-                    <div class="h2">КОММЕНТАРИИ</div>
-                    <form>
-                        <textarea class="comment-block__textarea"></textarea>
-                        <div class="comment-block__btn">
-                            <button type="submit" class="btn-first" href="javascript:;">Изменить</button>
-                        </div>
-                    </form>
-                </div>
+                <% var data = {
+                    title: "Отправить",
+                    link: false
+                }; %>
+
+                <%= _.template(require('./../includes/comment.html'))(data)%>
 
             </div>
             <div class="client-history__right">
 
-                <div class="history-call">
-                    <div class="h2">ИСТОРИЯ ЗВОНКОВ</div>
-                    <div class="history-call__items">
-                        <div class="history-call__name">12.09.2019</div>
-                        <div class="history-call__text">Продажа</div>
-                        <div class="history-call__name">13.07.2019</div>
-                        <div class="history-call__text">Договор о встрече</div>
-                        <div class="history-call__name">23.04.2019</div>
-                        <div class="history-call__text">Первый звонок</div>
-                    </div>
-                    <div class="history-call__btn">
-                        <a class="btn-first" href="javascript:;">Показать ещё</a>
-                    </div>
-                </div>
+                <% var data = {
+                    title: "ИСТОРИЯ ЗВОНКОВ"
+                }; %>
+
+                <%= _.template(require('./../includes/history.html'))(data)%>
 
             </div>
         </div>

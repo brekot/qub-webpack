@@ -1,0 +1,13 @@
+.table-one {
+    line-height: 30px;
+
+    &__first {
+        vertical-align: top;
+        padding: 0 25px 0 0;
+        width: 180px;
+    }
+    &__second {
+        font-weight: bold;
+        vertical-align: top;
+    }
+}

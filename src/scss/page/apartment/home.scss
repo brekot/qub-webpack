@@ -1,0 +1,41 @@
+.apartment-home {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+
+    &__addr {
+
+        &-name {
+            margin: 5px 0 0;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 25px;
+            max-width: 280px;
+            border-bottom: 1px solid #ccc;
+
+            &:hover {
+                border-color: transparent;
+            }
+        }
+    }
+    &__status {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: uppercase;
+
+        &_set {
+            color: var(--green);
+        }
+        &_unset {
+            color: var(--red);
+        }
+    }
+    &__num {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+    }
+}

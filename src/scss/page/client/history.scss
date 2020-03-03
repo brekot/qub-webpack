@@ -1,0 +1,39 @@
+// История
+.client-history {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__left {
+        width: 510px;
+    }
+    &__right {
+        width: 265px;
+    }
+}
+
+// Линия действий
+.client-line {
+    border-left: 1px solid var(--brown);
+    padding: 0 0 0 25px;
+    margin: 0 0 25px 6px;
+
+    &__point {
+        margin: 0 0 20px;
+        position: relative;
+
+        &:before {
+            content: "";
+            height: 13px;
+            width: 13px;
+            position: absolute;
+            background-color: var(--brown);
+            border-radius: 50%;
+            left: -32px;
+            top: 3px;
+        }
+    }
+    &__text {
+        font-weight: bold;
+    }
+}

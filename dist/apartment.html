@@ -8,7 +8,7 @@
 
         <title>Quartier - Project</title>
         <link rel="shortcut icon" href="favicon.ico" />
-        <link href="./local/template_styles.css?aac7c3618d8c3a09f575" rel="stylesheet" />
+        <link href="./local/template_styles.css?01c96c77d2a39742e796" rel="stylesheet" />
     </head>
 
     <body>
@@ -107,6 +107,7 @@
 
             <!-- Рабочая область -->
             <main class="main-main">
+                <!-- Хлебные крошки -->
                 <div class="breadcrumb">
                     <a href="javascript:;" class="breadcrumb__link">Все проекты</a>
                     <a href="javascript:;" class="breadcrumb__link">Каннские львы</a>
@@ -114,6 +115,7 @@
                     <span class="breadcrumb__current">6 этаж</span>
                 </div>
 
+                <!-- Информация о квартире -->
                 <div class="main-block main-block_no-head">
                     <div class="apartment-info">
                         <div class="apartment-info__left">
@@ -186,28 +188,207 @@
                     </div>
                 </div>
 
+                <!-- Информация о доме -->
                 <div class="main-block">
                     <a href="javascript:;" class="main-block__head main-block__head_open">
                         ДОМ
                     </a>
-                    <div class="main-block__body main-block__body_open"></div>
+                    <div class="main-block__body main-block__body_open">
+                        <div class="apartment-home">
+                            <a class="apartment-home__item apartment-home__addr" href="javascript:;">
+                                <img src="/local/img/icon.home.svg" alt="" />
+                                <div class="apartment-home__addr-name">Лаптиева, 31</div>
+                            </a>
+                            <div class="apartment-home__item">
+                                <div class="apartment-home__status apartment-home__status_set">СДАН</div>
+                                2 квартал 2019 года
+                            </div>
+                            <div class="apartment-home__item">
+                                <div class="apartment-home__num">16</div>
+                                этажей
+                            </div>
+                            <div class="apartment-home__item">
+                                <div class="apartment-home__num">5</div>
+                                блок секций
+                            </div>
+                            <div class="apartment-home__item">
+                                <div class="apartment-home__num">455</div>
+                                объектов
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Галерея -->
                 <div class="main-block">
                     <a href="javascript:;" class="main-block__head main-block__head_open">
                         ГАЛЕРЕЯ
                     </a>
-                    <div class="main-block__body main-block__body_open"></div>
+                    <div class="main-block__body main-block__body_open">
+                        <div class="apartment-gallery">
+                            <div class="apartment-gallery__left">
+                                <div class="apartment-gallery__count"><span id="agCountRange"></span>/<span id="agCountSumm"></span></div>
+                                <div class="apartment-gallery__block">
+                                    <div class="apartment-gallery__slider swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide apartment-gallery__item">
+                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                            </div>
+                                            <div class="swiper-slide apartment-gallery__item">
+                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                            </div>
+                                            <div class="swiper-slide apartment-gallery__item">
+                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                            </div>
+                                            <div class="swiper-slide apartment-gallery__item">
+                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                            </div>
+                                            <div class="swiper-slide apartment-gallery__item">
+                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                            </div>
+                                            <div class="swiper-slide apartment-gallery__item">
+                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                            </div>
+                                            <div class="swiper-slide apartment-gallery__item">
+                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                            </div>
+                                            <div class="swiper-slide apartment-gallery__item">
+                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                            </div>
+                                            <div class="swiper-slide apartment-gallery__item">
+                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" class="apartment-gallery__prev"></a>
+                                    <a href="javascript:;" class="apartment-gallery__next"></a>
+                                </div>
+                            </div>
+                            <div class="apartment-gallery__right">
+                                <form>
+                                    <input type="file" class="apartment-gallery__file" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Данные о квартире -->
                 <div class="main-block">
                     <a href="javascript:;" class="main-block__head main-block__head_open">
                         ДАННЫЕ
                     </a>
-                    <div class="main-block__body main-block__body_open"></div>
+                    <div class="main-block__body main-block__body_open">
+                        <div class="apartment-data">
+                            <div class="apartment-data__top">
+                                <div class="apartment-data__top-left">
+                                    <div class="apartment-client">
+                                        <div class="apartment-client__col">
+                                            <div class="apartment-client__label">Тип продажи</div>
+                                            <div class="apartment-client__select">
+                                                <select class="select-second">
+                                                    <option>Чистая продажа</option>
+                                                    <option>Чистая продажа +</option>
+                                                </select>
+                                            </div>
+                                            <div class="apartment-client__label">Этап</div>
+                                            <div class="apartment-client__select">
+                                                <select class="select-second">
+                                                    <option>Продано</option>
+                                                    <option>В продаже</option>
+                                                </select>
+                                            </div>
+                                            <div class="apartment-client__label">Тип договора</div>
+                                            <div class="apartment-client__select">
+                                                <select class="select-second">
+                                                    <option>Чистая продажа</option>
+                                                    <option>Чистая продажа +</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="apartment-client__col">
+                                            <div class="apartment-client__label">Клиент</div>
+                                            <div class="apartment-client__select">
+                                                <select class="select-second">
+                                                    <option>Александр Александров</option>
+                                                    <option>Иванов Иван</option>
+                                                </select>
+                                            </div>
+                                            <a href="tel:+79277555757" class="apartment-client__phone">8 927 755-57-57</a>
+                                            <a href="javascript:;" class="apartment-client__card">Карта клиента</a>
+                                        </div>
+                                        <div class="apartment-client__btn">
+                                            <a class="btn-first" href="javascript:;">Изменить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="apartment-data__top-right">
+                                    <!-- История действий -->
+                                    <div class="history-action">
+                                        <div class="h2">ИСТОРИЯ</div>
+                                        <div class="history-action__items">
+                                            <div class="history-action__name">12.09.2019</div>
+                                            <div class="history-action__text">Продажа</div>
+                                            <div class="history-action__name">13.07.2019</div>
+                                            <div class="history-action__text">Договор о встрече</div>
+                                            <div class="history-action__name">23.04.2019</div>
+                                            <div class="history-action__text">Первый звонок</div>
+                                        </div>
+                                        <div class="history-action__btn">
+                                            <a class="btn-first" href="javascript:;">Показать ещё</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="apartment-data__bottom">
+                                <div class="apartment-data__bottom-left">
+                                    <div class="tab-container">
+                                        <div class="tab-container__item tab-container__item_active">
+                                            <!-- Комментарии -->
+                                            <div class="comment-block">
+                                                <div class="h2">КОММЕНТАРИИ</div>
+                                                <form>
+                                                    <textarea class="comment-block__textarea"></textarea>
+                                                    <div class="comment-block__btn">
+                                                        <div>
+                                                            <a href="javascript:;" class="comment-block__link">История комментариев</a>
+                                                        </div>
+                                                        <button type="submit" class="btn-first" href="javascript:;">Отправить</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="tab-container__item">
+                                            <div class="comment-block">
+                                                <div class="h2">ПЛАТЕЖИ</div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-container__item">
+                                            <div class="comment-block">
+                                                <div class="h2">ДОКУМЕНТЫ</div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-container__item">
+                                            <div class="comment-block">
+                                                <div class="h2">ОЦЕНКА</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="apartment-data__bottom-right">
+                                    <div class="tab-right">
+                                        <a class="tab-right__link tab-right__link-comment tab-right__link_active" href="javascript:;">КОММЕНТАРИИ</a>
+                                        <a class="tab-right__link tab-right__link-pay" href="javascript:;">ПЛАТЕЖИ</a>
+                                        <a class="tab-right__link tab-right__link-doc" href="javascript:;">ДОКУМЕНТЫ</a>
+                                        <a class="tab-right__link tab-right__link-oc" href="javascript:;">ОЦЕНКА</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
-        <script type="text/javascript" src="./local/js/script.js?aac7c3618d8c3a09f575"></script>
+        <script type="text/javascript" src="./local/js/script.js?01c96c77d2a39742e796"></script>
     </body>
 </html>
