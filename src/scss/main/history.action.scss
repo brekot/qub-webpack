@@ -14,3 +14,17 @@
         text-align: center;
     }
 }
+
+@media (max-width: 929px)
+{
+    .history-action {
+        padding: 25px 30px;
+
+        &__items {
+            margin: 0 0 25px;
+        }
+        &__btn {
+            text-align: left;
+        }
+    }
+}

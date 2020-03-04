@@ -1,30 +1,32 @@
 .client-contact {
     margin: 10px 0;
+    display: flex;
 
-    &__first {
-        margin: 0 0 20px;
-        display: flex;
-        align-items: center;
-    }
-    &__email,
     &__phone {
+        width: 280px;
+    }
+    &__email-link,
+    &__phone-link {
         font-weight: 700;
         font-size: 21px;
-        line-height: 25px;
+        line-height: 30px;
         background-position: left center;
         background-repeat: no-repeat;
         padding: 0 0 0 30px;
+        display: block;
 
         &:hover {
             text-decoration: underline;
         }
     }
-    &__phone {
+    &__phone-link {
         background-image: url(img/icon.phone.svg);
-        margin: 0 75px 0 0;
+        margin: 0 0 20px 0;
     }
-    &__email {
+    &__email-link {
         background-image: url(img/icon.email.svg);
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &__btn {
         margin: 0 0 0 auto;
@@ -41,6 +43,37 @@
         &:hover {
             color: #cdd7e3;
             text-decoration: underline;
+        }
+    }
+}
+
+@media (min-width: 930px) AND (max-width: 1100px)
+{
+    .client-contact {
+
+        &__phone {
+            width: 230px;
+        }
+        &__email {
+            max-width: 310px;
+        }
+    }
+}
+@media (max-width: 929px)
+{
+    .client-contact {
+        flex-wrap: wrap;
+
+        &__phone {
+            wwidth: 100%;
+        }
+        &__email {
+            width: 100%;
+            margin: 30px 0;
+        }
+        &__btn {
+            margin: 0;
+            width: 100%;
         }
     }
 }

@@ -34,3 +34,25 @@
         text-decoration: underline;
     }
 }
+
+@media (max-width: 575px)
+{
+    .client-header {
+
+        &__first {
+            flex-wrap: wrap;
+            margin: 0 0 20px;
+        }
+        &__fio {
+            width: 100%;
+        }
+        &__second {
+            flex-direction: column;
+            align-items: self-start;
+        }
+        &__addr {
+            max-width: 250px;
+            margin: 5px 0 0;
+        }
+    }
+}

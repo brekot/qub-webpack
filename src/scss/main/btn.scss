@@ -20,3 +20,10 @@
     color: #A7B8D3;
     padding: 0 15px;
 }
+
+@media (max-width: 370px)
+{
+    .btn-first {
+        padding: 0 15px;
+    }
+}

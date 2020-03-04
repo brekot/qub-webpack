@@ -4,8 +4,12 @@
     padding: 15px;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 
     &__addr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         &-name {
             margin: 5px 0 0;
@@ -37,5 +41,21 @@
         font-weight: bold;
         font-size: 20px;
         line-height: 23px;
+    }
+}
+
+@media (max-width: 929px)
+{
+    .apartment-home {
+        padding: 15px 0;
+        align-items: flex-end;
+
+        &__two {
+            width: 50%;
+            margin: 0 0 50px;
+        }
+        &__three {
+            width: 33.3%;
+        }
     }
 }

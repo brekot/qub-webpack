@@ -72,9 +72,9 @@ $(function() {
             1100: {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
-                spaceBetween: 15,
+                spaceBetween: 20,
             },
-            767: {
+            929: {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
                 spaceBetween: 15

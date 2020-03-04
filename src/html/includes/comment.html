@@ -4,11 +4,13 @@
     <form>
         <textarea class="comment-block__textarea"></textarea>
         <div class="comment-block__btn">
-            <div>
+            <div class="comment-block__link-block">
 
             <% if (link) { %>
 
-                <a href="javascript:;" class="comment-block__link">История комментариев</a>
+                <a href="javascript:;" class="comment-block__link">
+                    История<span class="comment-block__hide-xs"> комментариев</span>
+                </a>
 
             <% } %>
 

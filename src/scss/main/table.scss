@@ -11,3 +11,36 @@
         vertical-align: top;
     }
 }
+
+@media (min-width: 576px)
+{
+    .table-one p {
+        margin: 0;
+    }
+}
+@media (max-width: 575px)
+{
+    .table-one {
+        line-height: 22px;
+        margin: -15px 0 0;
+
+        tr:not(.table-one__no-block) {
+            display: block;
+
+            & .table-one__first,
+            & .table-one__second {
+                display: block;
+            }
+        }
+        &__first {
+            padding: 15px 0 0;
+        }
+        &__no-block {
+            display: flex;
+
+            & .table-one__second {
+                padding: 15px 0 0;
+            }
+        }
+    }
+}

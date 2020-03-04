@@ -8,7 +8,7 @@
 
         <title>Quartier - Project</title>
         <link rel="shortcut icon" href="favicon.ico" />
-        <link href="./local/template_styles.css?01c96c77d2a39742e796" rel="stylesheet" />
+        <link href="./local/template_styles.css?31c35a6c8ad3fe08734f" rel="stylesheet" />
     </head>
 
     <body>
@@ -69,7 +69,7 @@
 
                     <div class="main-header__left">
                         <div class="main-header__left-part">
-                            <select>
+                            <select class="select-second">
                                 <option value="" disabled="disabled" selected="selected">Все проекты</option>
                                 <option value="">Проект №1</option>
                                 <option value="">Проект с очень длинным названием</option>
@@ -118,8 +118,8 @@
                 <!-- Информация о квартире -->
                 <div class="main-block main-block_no-head">
                     <div class="apartment-info">
+                        <div class="apartment-info__name">Квартира 6Г №2</div>
                         <div class="apartment-info__left">
-                            <div class="apartment-info__name">Квартира 6Г №2</div>
                             <div class="apartment-info__inner">
                                 <div class="apartment-info__first">
                                     <div class="apartment-info__head">Стоимость</div>
@@ -178,7 +178,7 @@
                             </div>
                         </div>
                         <div class="apartment-info__right">
-                            <img src="/local/upload/tmp1.jpg" alt="" />
+                            <img class="apartment-info__right-img" src="/local/upload/tmp1.jpg" alt="" />
                             <div class="apartment-info__links">
                                 <a href="javascript:;" class="apartment-info__link apartment-info__download"></a>
                                 <a href="javascript:;" class="apartment-info__link apartment-info__print"></a>
@@ -195,23 +195,25 @@
                     </a>
                     <div class="main-block__body main-block__body_open">
                         <div class="apartment-home">
-                            <a class="apartment-home__item apartment-home__addr" href="javascript:;">
-                                <img src="/local/img/icon.home.svg" alt="" />
-                                <div class="apartment-home__addr-name">Лаптиева, 31</div>
-                            </a>
-                            <div class="apartment-home__item">
+                            <div class="apartment-home__item apartment-home__two">
+                                <a class="apartment-home__addr" href="javascript:;">
+                                    <img src="/local/img/icon.home.svg" alt="" />
+                                    <div class="apartment-home__addr-name">Лаптиева, 31</div>
+                                </a>
+                            </div>
+                            <div class="apartment-home__item apartment-home__two">
                                 <div class="apartment-home__status apartment-home__status_set">СДАН</div>
                                 2 квартал 2019 года
                             </div>
-                            <div class="apartment-home__item">
+                            <div class="apartment-home__item apartment-home__three">
                                 <div class="apartment-home__num">16</div>
                                 этажей
                             </div>
-                            <div class="apartment-home__item">
+                            <div class="apartment-home__item apartment-home__three">
                                 <div class="apartment-home__num">5</div>
                                 блок секций
                             </div>
-                            <div class="apartment-home__item">
+                            <div class="apartment-home__item apartment-home__three">
                                 <div class="apartment-home__num">455</div>
                                 объектов
                             </div>
@@ -232,31 +234,31 @@
                                     <div class="apartment-gallery__slider swiper-container">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide apartment-gallery__item">
-                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                                <img class="apartment-gallery__img" src="/local/upload/gallery.jpg" alt="" />
                                             </div>
                                             <div class="swiper-slide apartment-gallery__item">
-                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                                <img class="apartment-gallery__img" src="/local/upload/gallery.jpg" alt="" />
                                             </div>
                                             <div class="swiper-slide apartment-gallery__item">
-                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                                <img class="apartment-gallery__img" src="/local/upload/gallery.jpg" alt="" />
                                             </div>
                                             <div class="swiper-slide apartment-gallery__item">
-                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                                <img class="apartment-gallery__img" src="/local/upload/gallery.jpg" alt="" />
                                             </div>
                                             <div class="swiper-slide apartment-gallery__item">
-                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                                <img class="apartment-gallery__img" src="/local/upload/gallery.jpg" alt="" />
                                             </div>
                                             <div class="swiper-slide apartment-gallery__item">
-                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                                <img class="apartment-gallery__img" src="/local/upload/gallery.jpg" alt="" />
                                             </div>
                                             <div class="swiper-slide apartment-gallery__item">
-                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                                <img class="apartment-gallery__img" src="/local/upload/gallery.jpg" alt="" />
                                             </div>
                                             <div class="swiper-slide apartment-gallery__item">
-                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                                <img class="apartment-gallery__img" src="/local/upload/gallery.jpg" alt="" />
                                             </div>
                                             <div class="swiper-slide apartment-gallery__item">
-                                                <img src="/local/upload/gallery.jpg" alt="" />
+                                                <img class="apartment-gallery__img" src="/local/upload/gallery.jpg" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -350,8 +352,8 @@
                                                 <form>
                                                     <textarea class="comment-block__textarea"></textarea>
                                                     <div class="comment-block__btn">
-                                                        <div>
-                                                            <a href="javascript:;" class="comment-block__link">История комментариев</a>
+                                                        <div class="comment-block__link-block">
+                                                            <a href="javascript:;" class="comment-block__link"> История<span class="comment-block__hide-xs"> комментариев</span> </a>
                                                         </div>
                                                         <button type="submit" class="btn-first" href="javascript:;">Отправить</button>
                                                     </div>
@@ -389,6 +391,6 @@
                 </div>
             </main>
         </div>
-        <script type="text/javascript" src="./local/js/script.js?01c96c77d2a39742e796"></script>
+        <script type="text/javascript" src="./local/js/script.js?31c35a6c8ad3fe08734f"></script>
     </body>
 </html>

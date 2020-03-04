@@ -1,6 +1,8 @@
 .apartment-info {
     padding: 5px 15px 15px 30px;
     display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 
     &__left {
         width: calc(100% - 345px);
@@ -10,6 +12,7 @@
         font-size: 34px;
         line-height: 40px;
         margin: 0 0 20px;
+        width: calc(100% - 345px);
     }
     &__inner {
         display: flex;
@@ -36,6 +39,7 @@
     &__right {
         width: 345px;
         position: relative;
+        margin: -60px 0 0;
     }
     &__links {
         position: absolute;
@@ -60,5 +64,52 @@
     }
     &__share {
         background-image: url(img/icon.share.svg);
+    }
+}
+
+@media (max-width: 1100px)
+{
+    .apartment-info {
+
+        &__name {
+            width: 100%;
+        }
+        &__left {
+            order: 2;
+            width: 100%;
+        }
+        &__right {
+            order: 1;
+            margin: 0 0 35px;
+        }
+    }
+}
+@media (max-width: 575px)
+{
+    .apartment-info {
+        padding: 0;
+
+        &__name {
+            margin: 0 0 10px;
+        }
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__first {
+            width: 100%;
+        }
+        &__second {
+            margin: 30px 0 0;
+            width: 100%;
+        }
+        &__right {
+
+            &-img {
+                max-width: 100%;
+            }
+        }
+        &__print {
+            display: none;
+        }
     }
 }
