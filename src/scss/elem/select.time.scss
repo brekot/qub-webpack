@@ -1,0 +1,47 @@
+// Страница проекта (project)
+.select-time-one {
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    &__name {
+        color: var(--text-light);
+        margin: 0 5px 0 0;
+    }
+    &__input {
+        background-color: var(--bg);
+        width: 62px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+    &__sep {
+        margin: 0 5px;
+        color: var(--text);
+    }
+}
+
+// Список клиентов (clients)
+.select-time-two {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+    &__name {
+        margin: 0 10px 0 0;
+    }
+    &__input {
+        background-color: var(--white);
+        width: 120px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        padding: 0 10px;
+    }
+    &__sep {
+        margin: 0 5px;
+        color: var(--text);
+    }
+}

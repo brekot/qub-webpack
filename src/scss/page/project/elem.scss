@@ -24,31 +24,6 @@
     }
 }
 
-// Выбор даты от/до
-.select-time {
-    font-size: 12px;
-    line-height: 14px;
-    display: flex;
-    align-items: center;
-
-    &__name {
-        color: var(--text-light);
-        margin: 0 5px 0 0;
-    }
-    &__input {
-        background-color: var(--bg);
-        width: 62px;
-        height: 30px;
-        border: none;
-        border-radius: 5px;
-        text-align: center;
-    }
-    &__sep {
-        margin: 0 5px;
-        color: var(--text);
-    }
-}
-
 // Выбор срока
 .select-date {
     display: flex;

@@ -1,0 +1,96 @@
+.clients-table-head {
+    margin: 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__count {
+        font-weight: bold;
+        color: var(--brown);
+    }
+}
+
+.clients-table {
+    margin: 0 -15px;
+    font-size: 14px;
+
+    &__line {
+        display: flex;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--table-line);
+
+        &:last-child {
+            border: none;
+        }
+    }
+    &__part {
+        padding: 0 15px;
+
+        &1 {
+            width: 300px;
+        }
+        &2 {
+            width: 170px;
+        }
+        &3 {
+            width: 205px;
+        }
+    }
+    &__name-user {
+        text-decoration: underline;
+        color: var(--blue);
+    }
+    &__phone {
+        font-weight: 700;
+        display: block;
+        margin: 10px 0;
+
+        &:hover {
+            color: var(--brown);
+        }
+    }
+    &__info {
+        color: var(--text-light);
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+    &__name-manager {
+        margin: 0 0 5px;
+    }
+    &__gray {
+        color: var(--text-light);
+    }
+}
+
+@media (min-width: 1101px)
+{
+    .clients-table-full {
+        padding: 0 5px 0 15px;
+    }
+
+    .clients-table {
+        margin: 0 -20px 0 -30px;
+
+        &__part1 {
+            padding: 0 15px 0 30px;
+        }
+    }
+}
+@media (min-width: 930px) AND (max-width: 1100px)
+{
+    .clients-table {
+
+        &__part {
+
+            &1 {
+                width: 230px;
+            }
+            &2 {
+                width: 140px;
+            }
+            &3 {
+                width: 170px;
+            }
+        }
+    }
+}

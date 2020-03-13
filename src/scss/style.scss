@@ -1,16 +1,23 @@
+// Основные
 @import "./main/variables"; // Основые цвета
 @import "./main/reboot"; // Сброс стилей
 @import "./lib/jquery.formstyler"; // Стилизация элементов
+@import "./lib/zebra.datepicker"; // Календарь выбора дат
 @import "~swiper/src/swiper"; // Общие стили слайдера
 @import "./main/menu"; // Меню и всё что с ним связано
 @import "./main/header"; // Шапка и всё что с ней связано
 @import "./main/template"; // Рабочая область и основные блоки
-@import "./main/btn"; // Кнопки
-@import "./main/table"; // Простая таблица
-@import "./main/comment"; // Блок Комментарий
-@import "./main/breadcrumb"; // Хлебные крошки
-@import "./main/history.action"; // История действий
-@import "./main/select"; // Варианты селектов
+
+// Элементы
+@import "./elem/sorter"; // Сортировка
+@import "./elem/btn"; // Кнопки
+@import "./elem/table"; // Простая таблица
+@import "./elem/comment"; // Блок Комментарий
+@import "./elem/breadcrumb"; // Хлебные крошки
+@import "./elem/history.action"; // История действий
+@import "./elem/select"; // Cелекты (два варианта)
+@import "./elem/search"; // Форма поиска
+@import "./elem/select.time"; // Выбор промежутка времени (два варианта)
 
 // Страница проекта
 @import "./page/project/head"; // Шапка объекта
@@ -29,3 +36,7 @@
 @import "./page/client/header"; // Шапка клиента
 @import "./page/client/contact"; // Контактные данные
 @import "./page/client/history"; // История клиента
+
+// Список клиентов
+@import "./page/clients/filter"; // Фильтр
+@import "./page/clients/table"; // Таблица

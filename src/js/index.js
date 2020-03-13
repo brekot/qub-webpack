@@ -1,10 +1,11 @@
 import $ from "jquery";
 import Swiper from 'swiper';
 
-import formstyler from './jquery.formstyler.min.js';
+window.jQuery = $;
+window.$ = $;
 
-/*window.jQuery = $;
-window.$ = $;*/
+import formstyler from './jquery.formstyler.min.js';
+import zebra_datepicker from './zebra.datepicker.min.js';
 
 $(function() {
 
@@ -41,6 +42,13 @@ $(function() {
     // Стилизация элементов
     $('select').styler();
     $('input[type="file"]').styler();
+
+    // Календарь выбора дат
+    $('input.datepicker').Zebra_DatePicker({
+        format: 'd.m.Y',
+        show_clear_date: false,
+        show_select_today: false
+    });
 
     // Замена placeholder в строке поиска
     if ($(document).width() < 500)
