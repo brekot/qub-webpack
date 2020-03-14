@@ -6,6 +6,7 @@ window.$ = $;
 
 import formstyler from './jquery.formstyler.min.js';
 import zebra_datepicker from './zebra.datepicker.min.js';
+require('@fancyapps/fancybox');
 
 $(function() {
 
@@ -103,5 +104,11 @@ $(function() {
         if (tmp > sliderLength) tmp = tmp - sliderLength;
 
         $('#agCountRange').text((sliderGallery.realIndex + 1) + '-' + tmp);
+    });
+
+    // Открыть фильтр
+    $('.clients-filter__open').click(function(){
+
+        $('.clients-filter__second').toggleClass('clients-filter__second_active');
     });
 });

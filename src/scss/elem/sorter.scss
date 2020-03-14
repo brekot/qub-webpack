@@ -39,3 +39,36 @@
         }
     } 
 }
+
+@media (max-width: 929px)
+{
+    .sorter {
+        margin: 0;
+    }
+}
+@media (max-width: 575px)
+{
+    .sorter {
+        flex-wrap: wrap;
+
+        &__name {
+            display: none;
+        }
+        &__link {
+            margin: 0 30px 0 0;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
+@media (max-width: 385px)
+{
+    .sorter {
+
+        &__link {
+            margin: 0 15px 0 0;
+        }
+    }
+}

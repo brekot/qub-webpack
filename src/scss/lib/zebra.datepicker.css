@@ -7,8 +7,8 @@
     padding: 3px;
     position: absolute;
     display: table;
-    *width: 255px;
-    z-index: 1200
+    width: 255px;
+    z-index: 99999;
 }
 .Zebra_DatePicker *,
 .Zebra_DatePicker :after,
@@ -169,15 +169,20 @@ button.Zebra_DatePicker_Icon {
     background: url(img/icon.date.svg) no-repeat center;
     border: none;
     cursor: pointer;
-    display: block;
-    height: 16px;
+    height: 30px;
     line-height: 0;
     padding: 0;
     position: absolute;
     text-indent: -9000px;
-    width: 16px
+    width: 30px;
+    right: 0 !important;
+    top: 0;
+    outline: none;
 }
 button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Disabled {
     background-position: center -32px;
     cursor: default
+}
+.datepicker {
+    padding-right: 30px !important;
 }
