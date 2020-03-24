@@ -1,0 +1,153 @@
+<% var data = {
+    title: "Quartier - Project"
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!-- Хлебные крошки -->
+<div class="breadcrumb">
+    <a href="javascript:;" class="breadcrumb__link">Все проекты</a>
+    <a href="javascript:;" class="breadcrumb__link">Каннские львы</a>
+    <span class="breadcrumb__current">Лаптиева, 31</span>
+</div>
+
+<!-- Шапка дома -->
+<div class="home-head">
+    <div class="home-head__name">Лаптиева, 31</div>
+    <div class="home-head__deadline">
+        <div class="home-head__deadline-status">Сдан</div>
+        <div class="home-head__deadline-time">2 квартал 2019 года</div>
+    </div>
+    <div class="home-head__info">
+        <div class="home-head__info-line">
+            <div class="home-head__info-label">Этажность</div>
+            <div class="home-head__info-count">6</div>
+        </div>
+        <div class="home-head__info-line">
+            <div class="home-head__info-label">Блок секций</div>
+            <div class="home-head__info-count">4</div>
+        </div>
+    </div>
+    <div class="home-head__info">
+        <div class="home-head__info-line">
+            <div class="home-head__info-label">Объектов в продаже</div>
+            <div class="home-head__info-count">286</div>
+        </div>
+        <div class="home-head__info-line">
+            <div class="home-head__info-label">Объектов продано</div>
+            <div class="home-head__info-count">345</div>
+        </div>
+    </div>
+</div>
+
+<!-- Фильтр по домам -->
+<div class="home-filter">
+    <form>
+        <div class="home-filter__items">
+            <div class="home-filter__item">
+                <select class="select-second">
+                    <option value="" disabled selected>Выбрать все</option>
+                    <option value="">Пункт №1</option>
+                    <option value="">Пункт #2</option>
+                </select>
+            </div>
+            <div class="home-filter__item">
+                <select class="select-second">
+                    <option value="" disabled selected>Все объекты</option>
+                    <option value="">Пункт №1</option>
+                    <option value="">Пункт #2</option>
+                </select>
+            </div>
+            <div class="home-filter__item">
+                <select class="select-second">
+                    <option value="" disabled selected>Все цены</option>
+                    <option value="">Пункт №1</option>
+                    <option value="">Пункт #2</option>
+                </select>
+            </div>
+            <div class="home-filter__item">
+                <button type="button" class="btn-fourth">Показать</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="main-block">
+    <a href="javascript:;" class="main-block__head main-block__head_open">
+        4 блок секция
+    </a>
+    <div class="main-block__body main-block__body_open">
+
+        <div class="floor-items">
+            <a href="javascript:;" class="floor-items__head">6 этаж</a>
+            <div class="floor-items__body">
+
+                <%= _.template(require('./../includes/apartment.blocks.html'))(data) %>
+
+            </div>
+            <a href="javascript:;" class="floor-items__head floor-items__head_open">
+                5 этаж
+            </a>
+            <div class="floor-items__body floor-items__body_open">
+
+                <%= _.template(require('./../includes/apartment.blocks.html'))(data) %>
+
+            </div>
+            <a href="javascript:;" class="floor-items__head">4 этаж</a>
+            <div class="floor-items__body">
+
+                <%= _.template(require('./../includes/apartment.blocks.html'))(data) %>
+
+            </div>
+            <a href="javascript:;" class="floor-items__head">3 этаж</a>
+            <div class="floor-items__body">
+
+                <%= _.template(require('./../includes/apartment.blocks.html'))(data) %>
+
+            </div>
+            <a href="javascript:;" class="floor-items__head">2 этаж</a>
+            <div class="floor-items__body">
+
+                <%= _.template(require('./../includes/apartment.blocks.html'))(data) %>
+
+            </div>
+            <a href="javascript:;" class="floor-items__head">1 этаж</a>
+            <div class="floor-items__body">
+
+                <%= _.template(require('./../includes/apartment.blocks.html'))(data) %>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="main-block">
+    <a href="javascript:;" class="main-block__head">
+        3 блок секция
+    </a>
+    <div class="main-block__body">
+        <br><br><br><br><br><br><br>
+    </div>
+</div>
+
+<div class="main-block">
+    <a href="javascript:;" class="main-block__head">
+        2 блок секция
+    </a>
+    <div class="main-block__body">
+        <br><br><br><br><br><br><br>
+    </div>
+</div>
+
+<div class="main-block">
+    <a href="javascript:;" class="main-block__head">
+        1 блок секция
+    </a>
+    <div class="main-block__body">
+        <br><br><br><br><br><br><br>
+    </div>
+</div>
+    
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

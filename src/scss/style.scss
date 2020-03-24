@@ -43,3 +43,9 @@
 // Список клиентов
 @import "./page/clients/filter"; // Фильтр
 @import "./page/clients/table"; // Таблица
+
+// Страница дома
+@import "./page/home/head"; // Шапка
+@import "./page/home/filter"; // Фильтр
+@import "./page/home/floor"; // Основные блоки
+@import "./page/home/apartment"; // Квадраты с таблицами

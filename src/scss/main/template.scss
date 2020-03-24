@@ -54,8 +54,18 @@
         text-transform: uppercase;
         padding: 15px;
 
-        &:hover {
-            color: var(--brown);
+        &:after {
+            content: "";
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: rotate(-45deg);
+            border-left: 2px solid var(--brown);
+            border-bottom: 2px solid var(--brown);
+            margin: -6px 0 0;
+            transition: border-color .3s linear;
         }
         &-count {
             background-color: var(--brown);
@@ -65,19 +75,21 @@
             padding: 0 7px;
             margin: 0 0 0 7px;
             border-radius: 5px;
+            transition: all .3s linear;
         }
-        &:after {
-            content: "";
-            background: url(img/down.brown.svg) no-repeat center;
-            width: 11px;
-            height: 7px;
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translate(0, -50%);
+        &:hover {
+            color: var(--text);
+
+            &:after {
+                border-color: var(--text);
+            }
+            & .main-block__head-count {
+                background-color: var(--text);    
+            }
         }
         &_open:after {
-            transform: translate(0, -50%) rotate(180deg);
+            transform: rotate(-225deg);
+            margin: -3px 0 0;
         }
     }
     &__body {

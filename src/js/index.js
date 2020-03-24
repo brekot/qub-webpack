@@ -40,6 +40,17 @@ $(function() {
         });
     });
 
+    // Скрытие / раскрытие этажей
+    $('.floor-items__head').click(function(){
+
+        $(this).toggleClass('floor-items__head_open');
+
+        $(this).next('.floor-items__body').slideToggle(400, function(){
+
+            $(this).toggleClass('floor-items__body_open');
+        });
+    });
+
     // Стилизация элементов
     $('select').styler();
     $('input[type="file"]').styler();

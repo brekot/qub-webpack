@@ -1,0 +1,47 @@
+.floor-items {
+
+    &__head {
+        font-weight: 700;
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        position: relative;
+        text-transform: uppercase;
+        padding: 15px 0;
+        font-size: 14px;
+        border-top: 1px solid var(--table-line);
+
+        &:first-child {
+            border: none;
+        }
+        &:after {
+            content: "";
+            border-left: 2px solid var(--text);
+            border-bottom: 2px solid var(--text);
+            display: inline-block;
+            height: 7px;
+            width: 7px;
+            transform: rotate(-45deg);
+            margin: -4px 0 0 7px;
+            transition: border-color .3s linear;
+        }
+        &:hover {
+            color: var(--brown);
+
+            &:after {
+                border-color: var(--brown);
+            }
+        }
+        &_open:after {
+            transform: rotate(-225deg);
+            margin: 0 0 0 7px;
+        }
+    }
+    &__body {
+        display: none;
+
+        &_open {
+            display: block;
+        }
+    }
+}
