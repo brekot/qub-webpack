@@ -1,0 +1,194 @@
+<% var data = {
+    title: "Quartier - Home"
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!-- Шапка объекта -->
+<div class="project-head">
+    <div class="project-head__main">
+        <img class="project-head__logo" src="/local/img/logo.project.svg" alt="">
+        <div class="project-head__name">Каннские львы</div>
+    </div>
+</div>
+
+<div class="main-block main-block_no-head">
+
+    <div class="project-info">
+        <a href="javascript:;" class="project-info__item">
+            <div class="project-info__pict">
+                <img class="project-info__icon" src="/local/img/icon.project1.svg" alt="">
+            </div>
+            <div class="project-info__block">
+                <div class="project-info__name">
+                    2 256 квартир
+                </div>
+                <div class="project-info__text">
+                    Общей стоимостью<br>
+                    1 211 203 980 ₽
+                </div>
+            </div>
+        </a>
+        <a href="javascript:;" class="project-info__item">
+            <div class="project-info__pict">
+                <img class="project-info__icon" src="/local/img/icon.project2.svg" alt="">
+            </div>
+            <div class="project-info__block">
+                <div class="project-info__name">
+                    122 парковочных<br>
+                    места
+                </div>
+                <div class="project-info__text">
+                    Общей стоимостью<br>
+                    343 203 980 ₽
+                </div>
+            </div>
+        </a>
+        <a href="javascript:;" class="project-info__item">
+            <div class="project-info__pict">
+                <img class="project-info__icon" src="/local/img/icon.project3.svg" alt="">
+            </div>
+            <div class="project-info__block">
+                <div class="project-info__name">
+                    3 коммерческой<br>
+                    недвижимости
+                </div>
+                <div class="project-info__text">
+                    Общей стоимостью<br>
+                    2 334 203 980 ₽
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="home-table">
+        <div class="home-table__block">
+            <div class="home-table__floor">
+                <div class="home-table__floor-first"></div>
+                <div class="home-table__floor-label">10 этаж</div>
+                <div class="home-table__floor-label">9 этаж</div>
+                <div class="home-table__floor-label">8 этаж</div>
+                <div class="home-table__floor-label">7 этаж</div>
+                <div class="home-table__floor-label">6 этаж</div>
+                <div class="home-table__floor-label">5 этаж</div>
+                <div class="home-table__floor-label">4 этаж</div>
+                <div class="home-table__floor-label">3 этаж</div>
+                <div class="home-table__floor-label">2 этаж</div>
+                <div class="home-table__floor-label">1 этаж</div>
+            </div>
+            <div class="home-table__inner">
+                <table class="home-table__table">
+                    <tr>
+                        <th>1 БС</th>
+                        <th>2 БС</th>
+                        <th>3 БС</th>
+                        <th>4 БС</th>
+                        <th>5 БС</th>
+                        <th>6 БС</th>
+                    </tr>
+                    <tr>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                    </tr>
+                    <tr>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                    </tr>
+                    <tr>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                    </tr>
+                    <tr>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                    </tr>
+                    <tr>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                    </tr>
+                    <tr>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                    </tr>
+                    <tr>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                    </tr>
+                    <tr>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                    </tr>
+                    <tr>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                    </tr>
+                    <tr>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                        <%= _.template(require('./../includes/home.table.item.html'))(data) %>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="home-table__legend">
+            <div class="home-table__legend-item">
+                <div class="home-table__legend-label">ВСЕГО в продаже</div>
+                <div class="home-table__legend-count home-table__legend-count_status-third">200</div>
+            </div>
+            <div class="home-table__legend-item">
+                <div class="home-table__legend-label">устные Брони</div>
+                <div class="home-table__legend-count home-table__legend-count_status-second">50</div>
+            </div>
+            <div class="home-table__legend-item">
+                <div class="home-table__legend-label">Платные брони</div>
+                <div class="home-table__legend-count home-table__legend-count_status-first">10</div>
+            </div>
+            <div class="home-table__legend-item">
+                <div class="home-table__legend-label">Продано</div>
+                <div class="home-table__legend-count">5</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

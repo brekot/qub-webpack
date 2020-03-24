@@ -1,5 +1,6 @@
 .home-head {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0 0 25px;
 
@@ -27,15 +28,11 @@
         }
     }
     &__info {
-        margin: 0 0 0 auto;
-        width: 190px;
 
-        &-line {
-            display: flex;
-        }
         &-label {
             color: var(--text-light);
-            width: 160px;
+            padding: 0 20px 0 0;
+            white-space: nowrap;
         }
         &-count {
             font-weight: bold;
@@ -53,49 +50,72 @@
     }
 }
 
+@media (min-width: 1101px)
+{
+    .home-head {
+
+        &__info {
+
+            &_first {
+                margin: 0 60px 0 auto;
+            }
+        }
+    }
+}
 @media (min-width: 930px) AND (max-width: 1100px)
 {
-    .project-head {
+    .home-head {
 
         &__name {
-            font-size: 24px;
-            line-height: 28px;
+            width: 100%;
+            margin: 0 0 20px;
         }
-        &__main {
-            width: calc(100% - 440px);
+        &__deadline {
+            width: 33.3%;
         }
-        &__addr {
-            margin: 0 0 0 20px;
+        &__info {
+            width: 33.3%;
         }
     }
 }
 @media (max-width: 929px)
 {
-    .project-head {
-        display: block;
+    .home-head {
 
-        &__main {
-            width: 100%;
-            align-items: flex-start;
-        }
         &__name {
-            font-size: 24px;
-            line-height: 28px;
-            margin: 10px 0 0 17px;
-            overflow: hidden;
-            white-space: nowrap;
-            max-width: calc(100% - 100px);
-            text-overflow: ellipsis;
+            width: 100%;
         }
+        &__deadline {
+            width: 100%;
+            margin: 20px 0;
+        }
+    }
+}
+@media (min-width: 576px) AND (max-width: 929px)
+{
+    .home-head {
+
         &__info {
-            margin: -30px 0 20px;
-            width: 100%;
-            padding: 0 0 0 100px;
+
+            &_first {
+                margin: 0 30px 0 0;
+            }
         }
-        &__addr {
-            padding: 0 0 0 100px;
+    }
+}
+@media (max-width: 575px)
+{
+    .home-head {
+
+        &__info {
             width: 100%;
-            margin: 0;
+
+            &-table {
+                width: 100%;
+            }
+            &-count {
+                text-align: right;
+            }
         }
     }
 }

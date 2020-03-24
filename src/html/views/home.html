@@ -1,5 +1,5 @@
 <% var data = {
-    title: "Quartier - Project"
+    title: "Quartier - Home"
 }; %>
 
 <%= _.template(require('./../includes/header.html'))(data) %>
@@ -18,25 +18,29 @@
         <div class="home-head__deadline-status">Сдан</div>
         <div class="home-head__deadline-time">2 квартал 2019 года</div>
     </div>
-    <div class="home-head__info">
-        <div class="home-head__info-line">
-            <div class="home-head__info-label">Этажность</div>
-            <div class="home-head__info-count">6</div>
-        </div>
-        <div class="home-head__info-line">
-            <div class="home-head__info-label">Блок секций</div>
-            <div class="home-head__info-count">4</div>
-        </div>
+    <div class="home-head__info home-head__info_first">
+        <table class="home-head__info-table">
+            <tr class="home-head__info-line">
+                <td class="home-head__info-label">Этажность</td>
+                <td class="home-head__info-count">6</td>
+            </tr>
+            <tr class="home-head__info-line">
+                <td class="home-head__info-label">Блок секций</td>
+                <td class="home-head__info-count">4</td>
+            </tr>
+        </table>
     </div>
     <div class="home-head__info">
-        <div class="home-head__info-line">
-            <div class="home-head__info-label">Объектов в продаже</div>
-            <div class="home-head__info-count">286</div>
-        </div>
-        <div class="home-head__info-line">
-            <div class="home-head__info-label">Объектов продано</div>
-            <div class="home-head__info-count">345</div>
-        </div>
+        <table class="home-head__info-table">
+            <tr class="home-head__info-line">
+                <td class="home-head__info-label">Объектов в продаже</td>
+                <td class="home-head__info-count">286</td>
+            </tr>
+            <tr class="home-head__info-line">
+                <td class="home-head__info-label">Объектов продано</td>
+                <td class="home-head__info-count">345</td>
+            </tr>
+        </table>
     </div>
 </div>
 

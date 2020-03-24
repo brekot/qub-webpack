@@ -1,0 +1,108 @@
+.home-table {
+
+    &__block {
+        display: flex;
+        margin: 0 25px 45px;
+    }
+    &__floor {
+        width: 105px;
+        border-right: 1px solid var(--table-line);
+        margin: 0 10px 0 0;
+
+        &-first {
+            height: 40px;
+        }
+        &-label {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: var(--text);
+            padding: 0 0 0 20px;
+        }
+    }
+    &__inner {
+        width: calc(100% - 115px);
+        overflow-x: auto;
+    }
+    &__table {
+
+        th {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: var(--text-light);
+            padding: 0 0 0 5px;
+        }
+        td {
+            font-size: 0;
+            line-height: 40px;
+            width: 117px;
+            padding: 0 5px 0 0;
+            white-space: nowrap;
+        }
+    }
+    &__link {
+        background-color: var(--text-light);
+        height: 13px;
+        width: 13px;
+        border-radius: 2px;
+        display: inline-block;
+        margin: 0 3px;
+        vertical-align: middle;
+
+        &_status {
+
+            &-first {
+                background-color: var(--brown);
+            }
+            &-second {
+                background-color: var(--red);
+            }
+            &-third {
+                background-color: var(--green);
+            }
+        }
+    }
+    &__legend {
+        margin: 0 0 15px 25px;
+        padding: 0 0 0 20px;
+        display: flex;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            margin: 0 40px 0 0;
+        }
+        &-label {
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin: 0 10px 0 0;
+        }
+        &-count {
+            padding: 0 5px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 18px;
+            background-color: var(--text-light);
+            border-radius: 5px;
+            color: var(--white);
+            min-width: 20px;
+
+            &_status {
+
+                &-first {
+                    background-color: var(--brown);
+                }
+                &-second {
+                    background-color: var(--red);
+                }
+                &-third {
+                    background-color: var(--green);
+                }
+            }
+        }
+    }
+}
