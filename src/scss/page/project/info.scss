@@ -4,6 +4,9 @@
     text-align: center;
     padding: 15px;
 
+    &__item {
+        width: calc(100% / 3);
+    }
     &__name {
         font-weight: 700;
         font-size: 21px;
@@ -25,14 +28,15 @@
         display: block;
         text-align: left;
 
-        &__pict {
-            width: 55px;
-            text-align: center;
-        }
         &__item {
+            width: 100%;
             margin: 0 0 25px;
             display: flex;
             align-items: flex-start;
+        }
+        &__pict {
+            width: 55px;
+            text-align: center;
         }
         &__block {
             margin: 0 0 0 15px;
