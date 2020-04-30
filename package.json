@@ -9,7 +9,7 @@
 	},
 	"dependencies": {
 		"@fancyapps/fancybox": "^3.5.7",
-		"jquery": "^3.4.1",
+		"jquery": "^3.5.0",
 		"swiper": "^4.5.1",
 		"zebra_datepicker": "^1.9.13"
 	},
