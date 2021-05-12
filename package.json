@@ -10,7 +10,7 @@
 	"dependencies": {
 		"@fancyapps/fancybox": "^3.5.7",
 		"jquery": "^3.4.1",
-		"swiper": "^4.5.1",
+		"swiper": "^6.5.1",
 		"zebra_datepicker": "^1.9.13"
 	},
 	"devDependencies": {
